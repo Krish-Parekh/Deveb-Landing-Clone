@@ -33,7 +33,6 @@ body {
   will-change: clip-path;
 }
 
-
 .btn-color {
   @apply bg-[#0084ff]
 }
@@ -58,4 +57,8 @@ body {
   to {
     transform: translateX(-100%);
   }
+}
+
+canvas {
+  pointer-events: none;
 }

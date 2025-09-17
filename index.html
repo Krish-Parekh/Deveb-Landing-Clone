@@ -10,7 +10,7 @@
 
 <body>
   <div class="ball"></div>
-  <nav class="w-full flex items-center justify-between px-16 py-5">
+  <nav class="w-full z-[10] flex items-center justify-between px-16 py-5 fixed top-0 left-0">
     <svg class="company-logo sm-logo" xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 38 38">
       <g id="Group_1188" data-name="Group 1188" transform="translate(-1146.95 436.62)">
         <g id="Group_1187" data-name="Group 1187" transform="translate(1146.95 -436.62)">
@@ -20,12 +20,12 @@
         </g>
       </g>
     </svg>
-    <ul class="flex items-center gap-8">
+    <ul class="cursor-pointer flex items-center gap-8">
       <li class="text-sm tracking-tight text-neutral-500">Services</li>
       <li class="text-sm tracking-tight text-neutral-500">Projects</li>
       <li class="text-sm tracking-tight text-neutral-500">About</li>
       <li>
-        <button class="btn btn-color p-2 w-28 rounded-full flex gap-x-4 overflow-hidden">
+        <button class="btn btn-color magnetic-button p-2 w-28 rounded-full flex gap-x-4 overflow-hidden">
           <span class="btn-text text-sm font-bold moveX tracking-tight text-white w-32 text-nowrap">Get a quote</span>
           <span class="btn-text text-sm font-bold moveX tracking-tight text-white w-32 text-nowrap">Get a quote</span>
           <span class="btn-text text-sm font-bold moveX tracking-tight text-white w-32 text-nowrap">Get a quote</span>
@@ -42,7 +42,7 @@
   </nav>
   <div class="h-[200vh] w-full">
     <div class="w-full h-screen sticky top-0 left-0">
-      <div class="absolute top-[40%] left-1/2 -translate-x-1/2 -translate-y-[40%] text-center">
+      <div class="absolute top-[40%] z-[2] left-1/2 -translate-x-1/2 -translate-y-[40%] text-center">
         <h1 class="whitespace-nowrap text-7xl tracking-tighter font-medium interactive-headline">
           <span>
             Design.
@@ -55,6 +55,7 @@
           </span>
         </h1>
       </div>
+      <canvas></canvas>
     </div>
     <div class="w-full h-screen"></div>
   </div>
