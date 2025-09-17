@@ -8,16 +8,6 @@ Small Three.js demo that renders a blobby icosahedron using custom GLSL shaders.
 - **GLSL shaders**: `shaders/vertex.glsl`, `shaders/fragment.glsl` for blob deformation/color
 - **GSAP + ScrollTrigger**: scroll-driven animation and hover mask effects
 
-### Run locally
-```bash
-npm install
-npm run dev
-```
-
-### Build
-```bash
-npm run build
-```
 
 ### Screenshots
 ![Display 1](public/display-1.png)
