@@ -20,6 +20,20 @@ body {
   pointer-events: none;
 }
 
+.interactive-headline {
+  position: relative;
+  transition: color 200ms ease;
+}
+
+.interactive-headline-overlay {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  clip-path: circle(var(--cursor-r, 0px) at var(--cursor-x, 50%) var(--cursor-y, 50%));
+  will-change: clip-path;
+}
+
+
 .btn-color {
   @apply bg-[#0084ff]
 }
